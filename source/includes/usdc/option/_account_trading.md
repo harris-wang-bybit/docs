@@ -45,9 +45,9 @@ POST
 
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
-|symbol|<b>true</b>|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |<b>true</b>|string|t(:usdcSymbol)|
 |orderType|<b>true</b>|string|t(:usdcOrderType)|
-|side|<b>true</b>|string|t(:side)|
+|t(:row_parameter_side) |<b>true</b>|string|t(:side)|
 |outRequestId|false|string|t(:optionOutRequestId)|
 |orderPrice|false|string|t(:usdcPlaceOrderPrice)|
 |orderQty|<b>true</b>|string|t(:usdcOrderQty)|
@@ -65,11 +65,11 @@ POST
 |:----- |:-----|----- |
 |orderId|string|t(:usdcOrderId)|
 |orderLinkId|string|t(:orderLinkId)
-|symbol|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |string|t(:usdcSymbol)|
 |orderPrice|string|t(:usdcOrderPrice)|
 |orderQty|string|t(:usdcOrderQty)|
 |orderType|string|t(:uscdOrderType)|
-|side|string|t(:side)|
+|t(:row_parameter_side) |string|t(:side)|
 
 ### t(:usdcBatchOrders)
 
@@ -123,9 +123,9 @@ POST
 
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
-|symbol|<b>true</b>|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |<b>true</b>|string|t(:usdcSymbol)|
 |orderType|<b>true</b>|string|t(:usdcOrderType)|
-|side|<b>true</b>|string|t(:side)|
+|t(:row_parameter_side) |<b>true</b>|string|t(:side)|
 |orderPrice|false|string|t(:usdcPlaceOrderPrice)|
 |orderQty|<b>true</b>|string|t(:usdcOrderQty)|
 |iv|false|string|t(:optionIv)|
@@ -143,11 +143,11 @@ POST
 |:----- |:-----|----- |
 |orderId|string|t(:usdcOrderId)|
 |orderLinkId|string|t(:orderLinkId)
-|symbol|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |string|t(:usdcSymbol)|
 |orderPrice|string|t(:usdcOrderPrice)|
 |orderQty|string|t(:usdcOrderQty)|
 |orderType|string|t(:uscdOrderType)|
-|side|string|t(:side)|
+|t(:row_parameter_side) |string|t(:side)|
 
 ### t(:usdcReplaceOrder)
 
@@ -191,7 +191,7 @@ POST
 
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
-|symbol|<b>true</b>|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |<b>true</b>|string|t(:usdcSymbol)|
 |orderId|<b>true</b>|string|t(:usdcReplaceOrderId)|
 |outRequestId|false|string|t(:optionOutRequestId)|
 |orderLinkId|false|string|t(:usdcOrderLinkId)|
@@ -253,7 +253,7 @@ POST
 
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
-|symbol|<b>true</b>|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |<b>true</b>|string|t(:usdcSymbol)|
 |orderId|<b>true</b>|string|t(:usdcReplaceOrderId)|
 |outRequestId|false|string|t(:optionOutRequestId)|
 |orderLinkId|false|string|t(:usdcOrderLinkId)|
@@ -309,7 +309,7 @@ POST
 
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
-|symbol|<b>true</b>|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |<b>true</b>|string|t(:usdcSymbol)|
 |outRequestId|false|string|t(:optionOutRequestId)|
 |orderId|<b>true</b>|string|t(:usdcReplaceOrderId)|
 |orderLinkId|false|string|t(:usdcOrderLinkId)|
@@ -364,7 +364,7 @@ POST
 
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
-|symbol|<b>true</b>|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |<b>true</b>|string|t(:usdcSymbol)|
 |outRequestId|false|string|t(:optionOutRequestId)|
 |orderId|<b>true</b>|string|t(:usdcReplaceOrderId)|
 |orderLinkId|false|string|t(:usdcOrderLinkId)|
@@ -490,7 +490,7 @@ POST
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
 |category|<b>true</b>|string|t(:usdcCategory)|
-|symbol|false|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |false|string|t(:usdcSymbol)|
 |orderId|false|string|t(:usdcOrderId)|
 |orderLinkId|false|string|t(:orderLinkId)|
 |direction|false|string|t(:direction)|
@@ -510,11 +510,11 @@ POST
 |:----- |:-----|----- |
 |orderId|string|t(:usdcOrderId)|
 |orderLinkId|string|t(:orderLinkId)|
-|symbol|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |string|t(:usdcSymbol)|
 |orderType|string|t(:usdcOrderType)|
-|side|string|t(:side)|
+|t(:row_parameter_side) |string|t(:side)|
 |qty|string|t(:usdcOrderQty)|
-|price|string|t(:usdcOrderPrice)|
+|t(:row_parameter_price) |string|t(:usdcOrderPrice)|
 |iv|string|t(:optionIv)|
 |t(:row_parameter_timeInForce)|string|t(:row_comment_timeInForce)|
 |orderPnl|string| Order PNL|
@@ -600,7 +600,7 @@ POST
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
 |category|<b>true</b>|string|t(:usdcCategory)|
-|symbol|false|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |false|string|t(:usdcSymbol)|
 |orderId|false|string|t(:usdcOrderId)|
 |orderLinkId|false|string|t(:orderLinkId)|
 |orderStatus|false|string|t(:orderStatus)|
@@ -621,11 +621,11 @@ POST
 |:----- |:-----|----- |
 |orderId|string|t(:usdcOrderId)|
 |orderLinkId|string|t(:orderLinkId)|
-|symbol|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |string|t(:usdcSymbol)|
 |orderType|string|t(:usdcOrderType)|
-|side|string|t(:side)|
+|t(:row_parameter_side) |string|t(:side)|
 |qty|string|t(:usdcOrderQty)|
-|price|string|t(:usdcOrderPrice)|
+|t(:row_parameter_price) |string|t(:usdcOrderPrice)|
 |iv|string|t(:optionIv)|
 |t(:row_parameter_timeInForce)|string|t(:row_comment_timeInForce)|
 |leavesValue|string|t(:leavesValue)|
@@ -700,7 +700,7 @@ POST
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
 |category|<b>true</b>|string|t(:usdcCategory)|
-|symbol|false|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |false|string|t(:usdcSymbol)|
 |orderId|false|string|t(:usdcOrderId)|
 |orderLinkId|false|string|t(:usdcOrderLinkId)|
 |startTime|<b>true</b>|string|t(:usdcStartTime)|
@@ -719,10 +719,10 @@ POST
 
 |t(:column_parameter)|t(:column_type)|t(:column_comments)|
 |:----- |:-----|----- |
-|symbol|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |string|t(:usdcSymbol)|
 |orderId|string|t(:usdcOrderId)|
 |orderLinkId|string|t(:orderLinkId)|
-|side|string|t(:side)|
+|t(:row_parameter_side) |string|t(:side)|
 |tradeId|string|t(:usdcTradeId)|
 |execPrice|string|t(:tradePrice)|
 |execQty|string|t(:uscdSize)|
@@ -813,9 +813,9 @@ POST
 |t(:column_parameter)|t(:column_type)|t(:column_comments)|
 |:----- |:-----|----- |
 |transactionTime|number|t(:transactionTime)|
-|symbol|string|t(:usdcSymbol)
+|t(:row_parameter_symbol) |string|t(:usdcSymbol)
 |type|string|t(:usdcType)|
-|side|string|t(:side)|
+|t(:row_parameter_side) |string|t(:side)|
 |orderQty|string|t(:usdcOrderQty)|
 |size|string|t(:uscdSize)|
 |tradePrice|string|t(:tradePrice)|
@@ -1078,7 +1078,7 @@ POST
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
 |category|<b>true</b>|string|t(:usdcCategory)|
-|symbol|false|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |false|string|t(:usdcSymbol)|
 |cursor|false|string|t(:cursor)|
 |direction|false|string|t(:direction)|
 |limit|number|string|t(:usdcPositionLimit)|
@@ -1095,8 +1095,8 @@ POST
 |t(:column_parameter)|t(:column_type)|t(:column_comments)|
 |:----- |:-----|----- |
 |riskId|string|riskId|
-|symbol|string|t(:usdcSymbol)|
-|side|string|t(:side)|
+|t(:row_parameter_symbol) |string|t(:usdcSymbol)|
+|t(:row_parameter_side) |string|t(:side)|
 |size|string|t(:uscdSize)
 |entryPrice|string|t(:entryPrice)
 |sessionAvgPrice|string|t(:sessionAvgPrice)|
@@ -1164,7 +1164,7 @@ POST
 
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
-|symbol|<b>true</b>|string|t(:usdcSymbol)|
+|t(:row_parameter_symbol) |<b>true</b>|string|t(:usdcSymbol)|
 |expDate|false|string|t(:usdcExpDateRepsonse)|
 |direction|false|string|t(:direction)|
 |limit|false|number|t(:usdcMax50Min20)|
@@ -1182,8 +1182,8 @@ POST
 |t(:column_parameter)|t(:column_type)|t(:column_comments)|
 |:----- |:-----|----- |
 |deliveryTime|number|t(:usdcDeliveryTime)|
-|symbol|string|t(:usdcSymbol)|
-|side|string|t(:side)|
+|t(:row_parameter_symbol) |string|t(:usdcSymbol)|
+|t(:row_parameter_side) |string|t(:side)|
 |position|string|t(:usdcPosition)|
 |deliveryPrice|string|t(:usdcDeliveryPrice)|
 |strike|string|t(:usdcStrike)|
